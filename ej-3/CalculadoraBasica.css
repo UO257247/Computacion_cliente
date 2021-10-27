@@ -1,0 +1,57 @@
+body{
+    text-align: center;
+    background-color: lightyellow;
+}
+
+h1{
+    font-size: medium;
+    margin-top: 0.1;
+    margin-bottom: 0.1;
+}
+
+h2{
+  font-size: small;
+  margin-top: 0.1;
+  margin-bottom: 0.1;
+}
+
+section {
+  font-size: 28px;
+  margin: 0 auto;
+  height: 15.5em;
+  width: 10em;
+  padding: 0.5em;
+  background-color: rgb(100, 100, 109);
+  border-radius: 12px;
+  
+}
+
+input {
+  border: 0;
+  border-radius: 5px;
+  background: rgb(164, 167, 189);
+  float: left;
+  text-align: right;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 28px;
+  width: 9.6em;
+  line-height: 2em;
+  text-align: center;
+  margin-bottom: 0.1em;
+
+  
+
+}
+button {
+  border: 0;
+  border-radius: 5px;
+  background: rgb(129, 174, 177);
+  color: #152227;
+  cursor: pointer;
+  float: left;
+  font: inherit;
+  margin: 0.25em;
+  width: 2em;
+  height: 2em;
+}
