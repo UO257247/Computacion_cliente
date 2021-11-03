@@ -45,6 +45,11 @@ class RPNCalculator
         document.getElementById("viewer").value= expression;
     }
 
+    dot()
+    {
+
+    }
+
     registerClear()
     {
         this.stack.push(this.register);
@@ -76,8 +81,8 @@ class RPNCalculator
         if (this.stack.length <= 1)
             return;
 
-        let b = this.stack.pop();
-        let a = this.stack.pop();
+        let b = Number(this.stack.pop());
+        let a = Number(this.stack.pop());
         this.stack.push(a + b);
         this.update();
     }
@@ -252,3 +257,5 @@ document.getElementById("sqrt").onclick = () => calc.doSqrt();
 document.getElementById("mod").onclick = () => calc.doMod();
 document.getElementById("pow").onclick = () => calc.doPow();
 document.getElementById("enter").onclick = () => calc.enter();
+
+document.getElementById("dot").onclick = () => calc.push(".");
