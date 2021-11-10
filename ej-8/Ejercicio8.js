@@ -84,4 +84,14 @@ $(document).ready(function () {
     $("#cudillero").click(function () {
         meteo.loadData("Cudillero");
     });
+
+    $("#aviles").click(function () {
+        meteo.loadData("Avilés");
+    });
+    $("#oviedo").click(function () {
+        meteo.loadData("Oviedo");
+    });
+    $("#aviles").click(function () {
+        meteo.loadData("Avilés");
+    });
 });

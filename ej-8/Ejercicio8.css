@@ -18,18 +18,22 @@ h2 {
     margin: 0px;
 }
 
-h2 + section {
+h2+section {
     border-style: solid;
     border-radius: 8px;
     display: grid;
     align-items: stretch;
 }
 
+section h2 {
+    color: black;
+}
+
 img {
     margin-right: 2em;
 }
 
-h3 + p {
+h3+p {
     font-size: 2em;
     color: white;
     margin: 0.5em 0em;
