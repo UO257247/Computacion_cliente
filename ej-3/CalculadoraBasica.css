@@ -4,22 +4,19 @@ body{
 }
 
 h1{
-    font-size: medium;
-    margin-top: 0.1;
-    margin-bottom: 0.1;
+    font-size: small;
 }
 
-h2{
+label{
   font-size: small;
-  margin-top: 0.1;
-  margin-bottom: 0.1;
-  color: white;
+  margin-bottom: 0.0;
+  color: black;
 }
 
 section {
   font-size: 28px;
   margin: 0 auto;
-  height: 15.5em;
+  height: 18em;
   width: 10em;
   padding: 0.5em;
   background-color: rgb(100, 100, 109);
