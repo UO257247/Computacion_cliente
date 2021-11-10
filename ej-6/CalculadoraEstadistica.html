@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Calculadora Estadística</title>
+        <meta name="Practica 03" content="Calculadora Estadística"/>
+        <link rel="stylesheet" type="text/css" href="CalculadoraEstadística.css" />
+    </head>
+
+    <body>
+        
+        <h1>Calculadora estadística</h1>
+        <div id="calculator" class="calculator">
+            <label for="viewer">Visor</label>
+            <input id="viewer" class="viewer" readonly />
+           
+            <div>
+                <button class="reg" id="regClear">mrc</button>
+                <button class="reg" id="regMinus">m-</button>
+                <button class="reg" id="regPlus">m+</button>
+                <button class="op" id="sqrt">&#8730;</button>
+            </div>
+
+            <div>
+                <button class="op" id="sin">sin</button>
+                <button class="op" id="cos">cos</button>
+                <button class="op" id="tan">tan</button>
+                <button class="op" id="pow">x&#178;</button>
+            </div>
+            
+            <div>
+                <button class="op" id="factorial">n!</button>
+                <button class="op" id="log">log</button>
+                <button class="op" id="exp">Exp</button>
+                <button class="op" id="mod">Mod</button>
+               
+               
+            </div>
+            <div>
+                <button class="op" id="avg">x̄</button>
+                <button class="op" id = "desvTipica">σ</button>
+                <button class="op" id = "varianza">σ²</button>
+                <button class="op" id="div">/</button>
+                
+            </div>
+            <div>
+                <button class="numb" id="7">7</button>
+                <button class="numb" id="8">8</button>
+                <button class="numb" id="9">9</button>
+                <button class="op" id="mult">*</button>
+
+            </div>
+            <div>
+                <button class="numb" id="4">4</button>
+                <button class="numb" id="5">5</button>
+                <button class="numb" id="6">6</button>
+                <button class="op" id="minus">-</button>
+            </div>
+            <div>
+                <button class="numb" id="1">1</button>
+                <button class="numb" id="2">2</button>
+                <button class="numb" id="3">3</button>
+                <button class="op" id="plus">+</button>
+            </div>
+            <div>
+                <button class="numb" id="0">0</button>
+                <button class="numb" id="dot">.</button>
+                <button class="op" id="clear">C</button>
+                <button class="op" id="equals">=</button>
+                <button class="numb" id="comma">,</button>
+            </div>
+        </div>
+        <script src="CalculadoraEstadística.js"></script>
+    </body>
+    <footer>Calculcadora estadística con operaciones de media, varianza y desviación típica</footer>
+</html>

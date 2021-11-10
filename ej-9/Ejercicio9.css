@@ -1,0 +1,45 @@
+body {
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    margin: 2em;
+    padding: 2em;
+    background-color: lightblue;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    color: black;
+    margin: 0px;
+}
+
+h2+section {
+    border-style: solid;
+    border-radius: 8px;
+    display: grid;
+    align-items: stretch;
+}
+
+section h2 {
+    color: black;
+}
+
+img {
+    margin-right: 2em;
+}
+
+h3+p {
+    font-size: 2em;
+    color: black;
+    margin: 0.5em 0em;
+}
+
+h3 {
+    margin-bottom: 0px;
+    font-size: 2em;
+}
