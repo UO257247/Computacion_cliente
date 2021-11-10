@@ -5,12 +5,13 @@ body{
 
 h1{
     font-size: small;
+    color: white;
 }
 
 label{
   font-size: small;
   margin-bottom: 0.0;
-  color: black;
+  color: white;
 }
 
 section {
