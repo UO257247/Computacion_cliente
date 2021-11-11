@@ -55,7 +55,6 @@ class BasicCalculator{
         this.update();
     }
 
-
     push(str)
     {
         this.string += str;
@@ -77,6 +76,7 @@ class BasicCalculator{
     _eval()
     {
         //Rounding to 5 decimals
+       
         return Math.round(eval(this.string) * 100000) / 100000;
     }
 }

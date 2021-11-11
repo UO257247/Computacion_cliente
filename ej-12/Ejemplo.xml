@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE persona SYSTEM "arbolGenealogico.dtd">
+<persona>
+    <datos>
+        <nombre>Marina</nombre>
+        <apellidos>Vega Fernández</apellidos>
+        <fechaNacimiento>1998-03-09</fechaNacimiento>
+        <lugarNacimiento>Avilés</lugarNacimiento>
+        <coordNacimiento>43.551990, -5.936144</coordNacimiento>
+        <multimedia>
+            <fotos>
+                <foto>media/marina.jpg</foto>
+            </fotos>
+        </multimedia>
+        <comentarios>Esta soy yo</comentarios>
+    </datos>
+    <padre>
+        <datos>
+            <nombre>Manuel Vidal</nombre>
+            <apellidos>Vega González</apellidos>
+            <fechaNacimiento>1966-04-14</fechaNacimiento>
+            <lugarNacimiento>Antiguo HUCA,Oviedo</lugarNacimiento>
+            <coordNacimiento>43.356911, -5.867850</coordNacimiento>
+            <multimedia>
+                <fotos>
+                    <foto>media/vidal.png</foto>
+                </fotos>
+            </multimedia>
+            <comentarios>Mi padre </comentarios>
+        </datos>
+        <padre>
+            <datos>
+                <nombre>Aquilino </nombre>
+                <apellidos>Vega Inclán</apellidos>
+                <fechaNacimiento>1931-05-25</fechaNacimiento>
+                <lugarNacimiento>Muros de Nalón</lugarNacimiento>
+                <coordNacimiento>43.543967, -6.105428</coordNacimiento>
+                <fechaFallecimiento>2016-04-24</fechaFallecimiento>
+                <lugarFallecimiento>Muros de Nalón</lugarFallecimiento>
+                <coordFallecimiento>43.543961, -6.105034</coordFallecimiento>
+                <multimedia>
+                    <fotos>
+                        <foto>media/aquilino.jpg</foto>
+                    </fotos>
+                </multimedia>
+                <comentarios>Este era mi abuelo, era electricista</comentarios>
+            </datos>
+            <padre>
+                <datos>
+                    <nombre>Manuel</nombre>
+                    <apellidos>Vega Grande</apellidos>
+                    <fechaNacimiento>1885-03-03</fechaNacimiento>
+                    <lugarNacimiento>Muros de Nalón</lugarNacimiento>
+                    <coordNacimiento>43.543967, -6.105428</coordNacimiento>
+                    <fechaFallecimiento>1969-05-06</fechaFallecimiento>
+                    <lugarFallecimiento>Muros de Nalón</lugarFallecimiento>
+                    <coordFallecimiento>43.543961, -6.105034</coordFallecimiento>
+                    <multimedia>
+                        <fotos>
+                            <foto>media/perfil.jpg</foto>
+                        </fotos>
+                    </multimedia>
+                    <comentarios>Este era mi bisabuelo, lo conocían como Manolo Pepa</comentarios>
+                </datos>
+            </padre>
+            <madre>
+                <datos>
+                    <nombre>Casilda </nombre>
+                    <apellidos>Inclán Cantera</apellidos>
+                    <fechaNacimiento>1888-02-25</fechaNacimiento>
+                    <lugarNacimiento>Somao, Pravia</lugarNacimiento>
+                    <coordNacimiento>43.53652060364828, -6.118549729592618</coordNacimiento>
+                    <fechaFallecimiento>1960-05-22</fechaFallecimiento>
+                    <lugarFallecimiento>Muros de Nalón</lugarFallecimiento>
+                    <coordFallecimiento>43.543961, -6.105034</coordFallecimiento>
+                    <multimedia>
+                        <fotos>
+                            <foto>media/perfil.jpg</foto>
+                        </fotos>
+                    </multimedia>
+                    <comentarios>Este era mi abuelo, era electricista</comentarios>
+                </datos>
+            </madre>
+        </padre>
+        <madre>
+            <datos>
+                <nombre>Maria del Pilar</nombre>
+                <apellidos>González García</apellidos>
+                <fechaNacimiento>1940-05-17</fechaNacimiento>
+                <lugarNacimiento>Sanchidrián, Ávila</lugarNacimiento>
+                <coordNacimiento>40.894654, -4.581683</coordNacimiento>
+                <multimedia>
+                    <fotos>
+                        <foto>media/pili.jpeg</foto>
+                    </fotos>
+                </multimedia>
+                <comentarios>Esta es mi abuela Pili, es la única de mis abuelos que no es asturiana</comentarios>
+            </datos>
+            <padre>
+                <datos>
+                    <nombre>Vidal</nombre>
+                    <apellidos>González De Andrés</apellidos>
+                    <fechaNacimiento>1940-06-06</fechaNacimiento>
+                    <lugarNacimiento>Sanchidrián, Ávila</lugarNacimiento>
+                    <coordNacimiento>40.894654, -4.581683</coordNacimiento>
+                    <fechaFallecimiento>1942-10-10</fechaFallecimiento>
+                    <lugarFallecimiento>Sanchidrián, Ávila</lugarFallecimiento>
+                    <coordFallecimiento>40.894654, -4.581683</coordFallecimiento>
+                    <multimedia>
+                        <fotos>
+                            <foto>media/perfil.jpg</foto>
+                        </fotos>
+                    </multimedia>
+                    <comentarios>Era electricista y murió en una tormenta</comentarios>
+                </datos>
+            </padre>
+            <madre>
+                <datos>
+                    <nombre>Mariana García Rubio</nombre>
+                    <apellidos>González García</apellidos>
+                    <fechaNacimiento>1917-12-08</fechaNacimiento>
+                    <lugarNacimiento>Sanchidrián, Ávila</lugarNacimiento>
+                    <coordNacimiento>40.894654, -4.581683</coordNacimiento>
+                    <fechaFallecimiento>1996-03-15</fechaFallecimiento>
+                    <lugarFallecimiento>Sanchidrián, Ávila</lugarFallecimiento>
+                    <coordFallecimiento>40.894654, -4.581683</coordFallecimiento>
+                    <multimedia>
+                        <fotos>
+                            <foto>media/perfil.jpg</foto>
+                        </fotos>
+                    </multimedia>
+                    <comentarios>Murió poco antes de que yo naciera</comentarios>
+                </datos>
+            </madre>
+        </madre>
+    </padre>
+    <madre>
+        <datos>
+            <nombre>Maria Rosa</nombre>
+            <apellidos>Fernández López</apellidos>
+            <fechaNacimiento>1965-01-27</fechaNacimiento>
+            <lugarNacimiento>Antiguo HUCA,Oviedo</lugarNacimiento>
+            <coordNacimiento>43.356911, -5.867850</coordNacimiento>
+            <multimedia>
+                <fotos>
+                    <foto>media/mariaRosa.jpg</foto>
+                </fotos>
+            </multimedia>
+            <comentarios>Mi madre</comentarios>
+        </datos>
+        <padre>
+            <datos>
+                <nombre>Ramón</nombre>
+                <apellidos>Fernández Martínez</apellidos>
+                <fechaNacimiento>1926-12-03</fechaNacimiento>
+                <lugarNacimiento>Muros de Nalón</lugarNacimiento>
+                <coordNacimiento>43.541986, -6.104761</coordNacimiento>
+                <fechaFallecimiento>2004-06-06</fechaFallecimiento>
+                <lugarFallecimiento>Hospital San Agustín, Avilés</lugarFallecimiento>
+                <coordFallecimiento>43.551990, -5.936144</coordFallecimiento>
+                <multimedia>
+                    <fotos>
+                        <foto>media/ramon.jpg</foto>
+                    </fotos>
+                </multimedia>
+                <comentarios>Era capataz de las grúas del puerto de San Esteban</comentarios>
+            </datos>
+            <padre>
+                <datos>
+                    <nombre>Francisco</nombre>
+                    <apellidos> Fernández Asenjo </apellidos>
+                    <fechaNacimiento>1890-03-22</fechaNacimiento>
+                    <lugarNacimiento>Luarca</lugarNacimiento>
+                    <coordNacimiento>43.54421065739363, -6.533031900121618</coordNacimiento>
+                    <fechaFallecimiento>1945-07-06</fechaFallecimiento>
+                    <lugarFallecimiento>Muros de Nalón</lugarFallecimiento>
+                    <coordFallecimiento>43.551990, -5.936144</coordFallecimiento>
+                    <multimedia>
+                        <fotos>
+                            <foto>media/perfil.jpg</foto>
+                        </fotos>
+                    </multimedia>
+                    <comentarios>Era capitán de barco y tenía un loro</comentarios>
+                </datos>
+            </padre>
+            <madre>
+                <datos>
+                    <nombre>Maria Dolores</nombre>
+                    <apellidos> Martínez García</apellidos>
+                    <fechaNacimiento>1890-09-16</fechaNacimiento>
+                    <lugarNacimiento>Pigüeña,Somiedo</lugarNacimiento>
+                    <coordNacimiento>43.13648167198461, -6.3297367845439005</coordNacimiento>
+                    <fechaFallecimiento>1974-12-04</fechaFallecimiento>
+                    <lugarFallecimiento>Muros de Nalón</lugarFallecimiento>
+                    <coordFallecimiento>43.54385713216607, -6.10337415985674</coordFallecimiento>
+                    <multimedia>
+                        <fotos>
+                            <foto>media/perfil.jpg</foto>
+                        </fotos>
+                    </multimedia>
+                    <comentarios>La llamaban Doña Lola y había estudiado magisterio</comentarios>
+                </datos>
+            </madre>
+        </padre>
+        <madre>
+            <datos>
+                <nombre>Maria Zulima</nombre>
+                <apellidos> López Menéndez</apellidos>
+                <fechaNacimiento>1927-11-23</fechaNacimiento>
+                <lugarNacimiento>El Rellayo,Cudillero</lugarNacimiento>
+                <coordNacimiento>43.559865, -6.180366</coordNacimiento>
+                <multimedia>
+                    <fotos>
+                        <foto>media/zulema.jpg</foto>
+                    </fotos>
+                </multimedia>
+                <comentarios>Esta es mi abuela Zulema, este año cumple 94</comentarios>
+            </datos>
+            <padre>
+                <datos>
+                    <nombre>José</nombre>
+                    <apellidos> López </apellidos>
+                    <fechaNacimiento>1890-04-27</fechaNacimiento>
+                    <lugarNacimiento>Pigüeña,Somiedo</lugarNacimiento>
+                    <coordNacimiento>43.13648167198461, -6.3297367845439005</coordNacimiento>
+                    <fechaFallecimiento>1930-08-22</fechaFallecimiento>
+                    <lugarFallecimiento>Cudillero</lugarFallecimiento>
+                    <coordFallecimiento>43.56159971471379, -6.147012389060073</coordFallecimiento>
+                    <multimedia>
+                        <fotos>
+                            <foto>media/perfil.jpg</foto>
+                        </fotos>
+                    </multimedia>
+                    <comentarios>Este es mi nisabuelo, murió cuando mi abuela tenía 3 años</comentarios>
+                </datos>
+            </padre>
+            <madre>
+                <datos>
+                    <nombre>Mercedes</nombre>
+                    <apellidos>Menéndez San Pedro</apellidos>
+                    <fechaNacimiento>1981-05-09</fechaNacimiento>
+                    <lugarNacimiento>El Rellayo,Cudillero</lugarNacimiento>
+                    <coordNacimiento>43.559865, -6.180366</coordNacimiento>
+                    <fechaFallecimiento>1977-09-24</fechaFallecimiento>
+                    <lugarFallecimiento>Muros de Nalón</lugarFallecimiento>
+                    <coordFallecimiento>43.54385713216607, -6.103374159856743</coordFallecimiento>
+                    <multimedia>
+                        <fotos>
+                            <foto>media/perfil.jpg</foto>
+                        </fotos>
+                    </multimedia>
+                    <comentarios>Esta es mi bisabuela. Murió con más de 90 años.</comentarios>
+                </datos>
+            </madre>
+        </madre>
+    </madre>
+
+</persona>
+    

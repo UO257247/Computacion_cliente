@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 12</title>
+    <meta name="author" content="Marina Vega Fernández">
+    <link rel="stylesheet" type="text/css" href="Ejercicio12.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="Ejercicio12.js"></script>
+</head>
+
+<body>
+
+    <section id="fileChooser">
+        <h1>Escoja el archivo</h1>
+        <label id="files"></label>
+        <input type="file" id="fileInput" onchange="currentFiles.load();" />
+    </section>
+
+
+    <div id="messages"></div>
+    <section id="data">
+        <h2>Datos</h2>
+    </section>
+    <section id="content">
+        <h2>Contenido</h2>
+    </section>
+</body>
+
+</html>

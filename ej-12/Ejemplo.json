@@ -1,0 +1,17 @@
+{
+    "localidade 1": {
+     "Continente": "África",
+     "País": "Angola",
+     "Capital": "Luanda"
+    },
+    "localidade 2": {
+     "Continente": "América do Norte",
+     "País": "Estados Unidos",
+     "Capital": "Washington DC"
+    },
+    "localidade 3": {
+     "Continente": "América Central",
+     "País": "México",
+     "Capital": "Cidade do México"
+    }
+}
