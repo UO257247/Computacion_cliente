@@ -11,6 +11,9 @@ h2 {
     text-align: center;
     font-style: italic;
 }
+caption{
+    font-weight: bold;
+}
 
 section {
     margin: 2em;

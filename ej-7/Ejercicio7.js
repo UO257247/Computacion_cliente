@@ -73,15 +73,14 @@ $(document).ready(function () {
         for (let i = 0; i < _numCols; i++) {
             result.push(0)
         }
-
-        $('tr').each((i, value) => {
-            let index = Number(Number(i + 1) % _numCols) -1;
-             result[index] += parseInt($(value).text());
+       
+        $('td').each((i, value) => {
+            let index = i % _numCols;
+            result[index] += parseInt($(value).text());
         });
-
         let row = "<th> Fila " + Number(_numRows + 1) + "</th>"
         let str = "<tr>";
-        str += row;
+        str += row
         for (let i = 0; i < _numCols; i++) {
 
             str += "<td>" + result[i] + "</td>";
@@ -90,7 +89,6 @@ $(document).ready(function () {
 
         $("table").append(str);
         _numRows++;
-
     })
 
     $('#sumRows').click(function () {
