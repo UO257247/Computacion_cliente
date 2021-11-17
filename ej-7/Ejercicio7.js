@@ -26,7 +26,10 @@ $(document).ready(function () {
     //===================TAREA 3 ===================//
     //Añadir elementos 
     $("#addRow").click(function () {
+        let row = "<th> Fila " + Number(_numRows + 1) + "</th>"
+
         let str = "<tr>";
+        str += row;
         for (let i = 0; i < _numCols; i++) {
             str += "<td>" + Math.round(Math.random() * 100) + "</td>";
         }
@@ -62,7 +65,7 @@ $(document).ready(function () {
     })
 
     // ================= TAREA 6 ================= //
-    $("#sumRows").click(function () {
+    $("#sumCols").click(function () {
         if (_numRows <= 0) {
             return;
         }
@@ -71,13 +74,16 @@ $(document).ready(function () {
             result.push(0)
         }
 
-        $('td').each((i, value) => {
-            let index = i % _numCols;
-            result[index] += parseInt($(value).text());
+        $('tr').each((i, value) => {
+            let index = Number(Number(i + 1) % _numCols) -1;
+             result[index] += parseInt($(value).text());
         });
 
+        let row = "<th> Fila " + Number(_numRows + 1) + "</th>"
         let str = "<tr>";
+        str += row;
         for (let i = 0; i < _numCols; i++) {
+
             str += "<td>" + result[i] + "</td>";
         }
         str += "</tr>";
@@ -87,23 +93,20 @@ $(document).ready(function () {
 
     })
 
-    $('#sumCols').click(function()
-    {
+    $('#sumRows').click(function () {
         if (_numCols <= 0)
             return;
 
-        $('tr').each((i, value) => 
-        {
+        $('tr').each((i, value) => {
             let result = 0;
-            
-            $(value).children().each((j, value) => 
-            {
-                result += parseInt($(value).text());
+
+            $(value).find("td").each((j, td) => {
+                result += parseInt($(td).text());
             });
 
-            $(value).append( "<td>" + result + "</td>" );
+            $(value).append("<td>" + result + "</td>");
         });
 
-        _numCols ++;
+        _numCols++;
     });
 })
