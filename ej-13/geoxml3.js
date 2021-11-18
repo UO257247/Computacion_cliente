@@ -1,30 +1,3 @@
-/*
-    geoxml3.js
-    Renders KML on the Google Maps JavaScript API Version 3
-    http://code.google.com/p/geoxml3/
-   Copyright 2010 Sterling Udell, Larry Ross
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
-       http://www.apache.org/licenses/LICENSE-2.0
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
-*/
-/**
- * A MultiGeometry object that will allow multiple polylines in a MultiGeometry
- * containing LineStrings to be treated as a single object
- *
- * @param {MutiGeometryOptions} anonymous object.  Available properties:
- * map: The map on which to attach the MultiGeometry
- * paths: the individual polylines
- * polylineOptions: options to use when constructing all the polylines
- *
- * @constructor
- */
-// only if Google Maps API included
 if (!!window.google && !!google.maps) {
     function MultiGeometry(multiGeometryOptions) {
         function createPolyline(polylineOptions, mg) {
