@@ -1,0 +1,96 @@
+<kml xmlns="http://www.opengis.net/kml/2.2">
+	 <Document>
+<name>Lugares de nacimiento y fallecimiento</name>
+<description>Estos son los lugares de nacimiento y fallecimiento de mis familiares.</description>
+	 	 <Placemark>
+	 	 	 <name>Marina</name>
+	 	 	 <Point>
+	 	 	 	 <coordinates>-5.936144, 43.551990</coordinates>
+	 	 	 </Point>
+	 	 </Placemark>
+	 	 <Placemark>
+	 	 	 <name>Manuel Vidal</name>
+	 	 	 <Point>
+	 	 	 	 <coordinates>-5.867850, 43.356911</coordinates>
+	 	 	 </Point>
+	 	 </Placemark>
+	 	 <Placemark>
+	 	 	 <name>Aquilino</name>
+	 	 	 <Point>
+	 	 	 	 <coordinates>-6.105428, 43.543967</coordinates>
+	 	 	 </Point>
+	 	 </Placemark>
+	 	 <Placemark>
+	 	 	 <name>Manuel</name>
+	 	 	 <Point>
+	 	 	 	 <coordinates>-6.105428, 43.543967</coordinates>
+	 	 	 </Point>
+	 	 </Placemark>
+	 	 <Placemark>
+	 	 	 <name>Casilda</name>
+	 	 	 <Point>
+	 	 	 	 <coordinates>-6.118549729592618, 43.53652060364828</coordinates>
+	 	 	 </Point>
+	 	 </Placemark>
+	 	 <Placemark>
+	 	 	 <name>Maria del Pilar</name>
+	 	 	 <Point>
+	 	 	 	 <coordinates>-4.581683, 40.894654</coordinates>
+	 	 	 </Point>
+	 	 </Placemark>
+	 	 <Placemark>
+	 	 	 <name>Vidal</name>
+	 	 	 <Point>
+	 	 	 	 <coordinates>-4.581683, 40.894654</coordinates>
+	 	 	 </Point>
+	 	 </Placemark>
+	 	 <Placemark>
+	 	 	 <name>Mariana García Rubio</name>
+	 	 	 <Point>
+	 	 	 	 <coordinates>-4.581683, 40.894654</coordinates>
+	 	 	 </Point>
+	 	 </Placemark>
+	 	 <Placemark>
+	 	 	 <name>Maria Rosa</name>
+	 	 	 <Point>
+	 	 	 	 <coordinates>-5.867850, 43.356911</coordinates>
+	 	 	 </Point>
+	 	 </Placemark>
+	 	 <Placemark>
+	 	 	 <name>Ramón</name>
+	 	 	 <Point>
+	 	 	 	 <coordinates>-6.104761, 43.541986</coordinates>
+	 	 	 </Point>
+	 	 </Placemark>
+	 	 <Placemark>
+	 	 	 <name>Francisco</name>
+	 	 	 <Point>
+	 	 	 	 <coordinates>-6.533031900121618, 43.54421065739363</coordinates>
+	 	 	 </Point>
+	 	 </Placemark>
+	 	 <Placemark>
+	 	 	 <name>Maria Dolores</name>
+	 	 	 <Point>
+	 	 	 	 <coordinates>-6.3297367845439005, 43.13648167198461</coordinates>
+	 	 	 </Point>
+	 	 </Placemark>
+	 	 <Placemark>
+	 	 	 <name>Maria Zulima</name>
+	 	 	 <Point>
+	 	 	 	 <coordinates>-6.180366, 43.559865</coordinates>
+	 	 	 </Point>
+	 	 </Placemark>
+	 	 <Placemark>
+	 	 	 <name>José</name>
+	 	 	 <Point>
+	 	 	 	 <coordinates>-6.3297367845439005, 43.13648167198461</coordinates>
+	 	 	 </Point>
+	 	 </Placemark>
+	 	 <Placemark>
+	 	 	 <name>Mercedes</name>
+	 	 	 <Point>
+	 	 	 	 <coordinates>-6.180366, 43.559865</coordinates>
+	 	 	 </Point>
+	 	 </Placemark>
+	 </Document>
+</kml>
