@@ -18,6 +18,12 @@ h2 {
     margin: 0px;
 }
 
+h1+section {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
 h2+section {
     border-style: solid;
     border-radius: 8px;
