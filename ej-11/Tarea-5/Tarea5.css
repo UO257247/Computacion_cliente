@@ -1,0 +1,29 @@
+/*Especificidad: a=0 b=0 c=1 1*/
+
+div {
+    height: 500px;
+    width: 100%;
+}
+
+/*Especificidad: a=0 b=0 c=1 1*/
+
+body {
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+
+/*Especificidad: a=0 b=0 c=1 1*/
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: white;
+    color: rgb(57, 81, 87);
+}
+
+/*Especificidad: a=0 b=0 c=1 1*/
+input {
+    margin: 5px 20px;
+}
