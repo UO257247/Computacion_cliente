@@ -77,7 +77,7 @@ class BasicCalculator{
     {
         //Rounding to 5 decimals
        
-        return Math.round(eval(this.string) * 100000) / 100000;
+        return Math.round(Number(eval(this.string) * 100000)) / 100000;
     }
 }
 
