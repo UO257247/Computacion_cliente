@@ -1,0 +1,33 @@
+body {
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+section {
+    margin: 2em;
+    padding: 2em;
+    background-color: lightblue;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin: 0px;
+}
+
+h1+section {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+h2+section {
+    border-style: solid;
+    border-radius: 8px;
+    display: grid;
+    align-items: stretch;
+}
+
