@@ -8,6 +8,7 @@ section {
     margin: 2em;
     padding: 2em;
     background-color: lightblue;
+    display: flex;
 }
 
 h1 {
@@ -30,4 +31,3 @@ h2+section {
     display: grid;
     align-items: stretch;
 }
-
