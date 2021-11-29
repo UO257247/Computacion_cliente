@@ -2,18 +2,18 @@ body {
     background-color: lightyellow;
 }
 
-h1{
+h1 {
     font-size: small;
     color: white;
 }
 
-label{
-  font-size: small;
-  margin-bottom: 0.0;
-  color: white;
+label {
+    font-size: small;
+    margin-bottom: 0.0;
+    color: white;
 }
 
-section {
+main {
     font-size: 24px;
     margin: 0 auto;
     height: 27em;
@@ -23,12 +23,11 @@ section {
     border-radius: 12px;
 }
 
-form{
+div {
     display: grid;
     grid-template-columns: repeat(auto-fit, 1fr);
     grid-auto-rows: max-content;
-    grid-template-areas:
-    "a a a a a" ;
+    grid-template-areas: "a a a a a";
 }
 
 input {
@@ -58,6 +57,7 @@ button {
     width: 3em;
     height: 2em;
 }
+
 button:hover {
     background: rgb(154, 215, 219);
 }

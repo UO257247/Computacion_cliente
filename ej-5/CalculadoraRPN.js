@@ -1,37 +1,33 @@
-class RPNCalculator
-{
-    constructor() 
-    {
-       this.display = "";
-       this.memory = "";
-       this.stack = [];
+class RPNCalculator {
+    constructor() {
+        this.display = "";
+        this.memory = "";
+        this.stack = [];
     }
 
-    clear()
-    {
-        this.display= "";
+    clear() {
+        this.display = "";
         this.stack = new Array();
         this.represent(0);
-        this.memory="";
+        this.memory = "";
     }
 
-    update()
-    {
-      this.display= "";
-      for (var i =0; i< this.stack.length; i++){
-          this.display+=this.stack[i];
-          this.display+= " ";
-      }
-      document.getElementById("viewer").value = this.display;
-      this.display="";
+    update() {
+        this.display = "";
+        for (var i = 0; i < this.stack.length; i++) {
+            this.display += this.stack[i];
+            this.display += " ";
+        }
+        document.getElementById("viewer").value = this.display;
+        this.display = "";
     }
 
-    enter(){
-       if(!(this.display=="")){
-           this.stack.push(this.display);
-           this.display="";
-           this.update();
-       }
+    enter() {
+        if (!(this.display == "")) {
+            this.stack.push(this.display);
+            this.display = "";
+            this.update();
+        }
     }
 
     writeOnDisplay(expression) {
@@ -41,24 +37,21 @@ class RPNCalculator
         }
     }
 
-    represent(expression){
-        document.getElementById("viewer").value= expression;
+    represent(expression) {
+        document.getElementById("viewer").value = expression;
     }
 
-    dot()
-    {
+    dot() {
 
     }
 
-    registerClear()
-    {
+    registerClear() {
         this.stack.push(this.register);
         this.register = 0;
         this.update();
     }
 
-    registerPlus()
-    {
+    registerPlus() {
         if (this.stack.length <= 0)
             return;
 
@@ -66,8 +59,7 @@ class RPNCalculator
         this.update();
     }
 
-    registerMinus()
-    {
+    registerMinus() {
         if (this.stack.length <= 0)
             return;
 
@@ -76,8 +68,7 @@ class RPNCalculator
     }
 
     //------------------------------------------Operations-------------------------------------------- 
-    doAddition()
-    {
+    doAddition() {
         if (this.stack.length <= 1)
             return;
 
@@ -87,10 +78,8 @@ class RPNCalculator
         this.update();
     }
 
-    doSubtraction()
-    {
-        if (this.stack.length <= 1)
-        {
+    doSubtraction() {
+        if (this.stack.length <= 1) {
             return;
         }
 
@@ -100,8 +89,7 @@ class RPNCalculator
         this.update();
     }
 
-    doDivision()
-    {
+    doDivision() {
         if (this.stack.length <= 1)
             return;
 
@@ -111,8 +99,7 @@ class RPNCalculator
         this.update();
     }
 
-    doMultiplication()
-    {
+    doMultiplication() {
         if (this.stack.length <= 1)
             return;
 
@@ -123,8 +110,7 @@ class RPNCalculator
     }
 
 
-    doSin()
-    {
+    doSin() {
         if (this.stack.length <= 0)
             return;
 
@@ -133,8 +119,7 @@ class RPNCalculator
         this.update();
     }
 
-    doCos()
-    {
+    doCos() {
         if (this.stack.length <= 0)
             return;
 
@@ -143,8 +128,7 @@ class RPNCalculator
         this.update();
     }
 
-    doTan()
-    {
+    doTan() {
         if (this.stack.length <= 0)
             return;
 
@@ -153,8 +137,7 @@ class RPNCalculator
         this.update();
     }
 
-    doFactorial()
-    {
+    doFactorial() {
         if (this.stack.length <= 0)
             return;
 
@@ -163,60 +146,54 @@ class RPNCalculator
         this.update();
     }
 
-    _factorial(n) 
-    {
+    _factorial(n) {
         if (n == 0)
             return 1;
 
         return n * this._factorial(n - 1);
     }
 
-    doExp()
-    {
+    doExp() {
         if (this.stack.length <= 0)
             return;
-            
+
         let val = this.stack.pop();
         this.stack.push(Math.exp(val));
         this.update();
     }
 
-    doLog()
-    {
+    doLog() {
         if (this.stack.length <= 0)
             return;
-            
+
         let val = this.stack.pop();
         this.stack.push(Math.log10(val));
         this.update();
     }
-    
-    doSqrt()
-    {
+
+    doSqrt() {
         if (this.stack.length <= 0)
             return;
-            
+
         let val = this.stack.pop();
         this.stack.push(Math.sqrt(val));
         this.update();
     }
 
-    doMod()
-    {
+    doMod() {
         if (this.stack.length <= 1)
             return;
-            
+
         let b = this.stack.pop();
         let a = this.stack.pop();
         this.stack.push(a % b);
         this.update();
     }
 
-    doPow()
-    {
+    doPow() {
         if (this.stack.length <= 0)
             return;
-            
+
         let val = this.stack.pop();
         this.stack.push(val * val);
         this.update();
@@ -227,12 +204,11 @@ var calc = new RPNCalculator();
 
 document.getElementById("clear").onclick = calc.clear.bind(calc);
 
-for (let i = 0; i < 10; i ++)
-{
-    let numb = i;
-    document.getElementById("" + i).onclick = 
+for (let i = 0; i < 10; i++) {
+    let numb = Number(i);
+    document.getElementById(numb).onclick =
         () => {
-            calc.writeOnDisplay(i);
+            calc.writeOnDisplay(numb);
         }
 }
 
