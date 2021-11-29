@@ -1,6 +1,7 @@
 body {
     background-color: aliceblue;
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
 }
 
 section {
@@ -13,7 +14,11 @@ h1 {
     text-align: center;
 }
 
-section + section {
+p {
+    font-size: medium;
+}
+
+section+section {
     background-color: rgb(101, 156, 94);
     border-style: solid;
     margin-bottom: 20px;
