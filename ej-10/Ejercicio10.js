@@ -29,11 +29,11 @@ class NatGas {
             dataType: "json",
             url: result.url,
             method: 'GET',
-            success: function (data) {
+            success: function(data) {
                 result.data = data;
                 result.onSuccess(result);
             },
-            error: function () {
+            error: function() {
                 result.onError(result);
             }
         });
@@ -89,7 +89,11 @@ class NatGas {
             data: chartData,
             options: {}
         };
-        const myChart = new Chart(
+
+        if (this.myChart) {
+            this.myChart.destroy();
+        }
+        this.myChart = new Chart(
             document.getElementById('myChart'),
             config
         );
@@ -99,24 +103,25 @@ class NatGas {
 
 var natGas = new NatGas();
 
-$(document).ready(function () {
+$(document).ready(function() {
     natGas.loadData("NewYork");
-    $("#NewYork").click(function () {
+    $("#NewYork").click(function() {
         natGas.loadData("NewYork")
     });
-    $("#Texas").click(function () {
+    $("#Texas").click(function() {
+        console.log("BLABLABLA")
         natGas.loadData("Texas")
-    }); 
-    $("#California").click(function () {
+    });
+    $("#California").click(function() {
         natGas.loadData("California")
-    }); 
-    $("#Kentucky").click(function () {
+    });
+    $("#Kentucky").click(function() {
         natGas.loadData("Kentucky")
-    }); 
-    $("#Ohio").click(function () {
+    });
+    $("#Ohio").click(function() {
         natGas.loadData("Ohio")
     });
-    $("#Wisconsin").click(function () {
+    $("#Wisconsin").click(function() {
         natGas.loadData("Wisconsin")
     });
 });

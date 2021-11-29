@@ -1,0 +1,28 @@
+body {
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    margin: 2em;
+    padding: 2em;
+    background-color: lightblue;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    font-size: medium;
+}
+
+section {
+    background-color: rgb(101, 156, 94);
+    border-style: solid;
+    margin-bottom: 20px;
+    height: 500px;
+    width: 100%;
+}

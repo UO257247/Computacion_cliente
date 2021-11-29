@@ -1,0 +1,107 @@
+{
+    "type": "FeatureCollection",
+    "features": [{
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-5.867707140736883,
+                        43.3671353
+                    ],
+                    [-5.865946,
+                        43.37908
+                    ],
+                    [-5.868376,
+                        43.380249
+                    ],
+                    [-5.866667,
+                        43.383333
+                    ]
+
+
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "output3.log",
+                "stroke": "#ff0000",
+                "stroke-opacity": 1,
+                "stroke-width": 10
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-5.9205,
+                        43.333
+                    ],
+                    [-5.9288647, 43.3318045],
+                    [-5.928551, 43.323185],
+                    [-5.918925, 43.323311]
+
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "output4.log",
+                "stroke": "#b12cee",
+                "stroke-opacity": 1,
+                "stroke-width": 10
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-5.8511504,
+                        43.3552622
+                    ],
+                    [-5.8511504, 43.3552622],
+                    [-5.860874, 43.358318],
+                    [-5.843455, 43.362524]
+
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "output4.log",
+                "stroke": "#b12cee",
+                "stroke-opacity": 1,
+                "stroke-width": 10
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-5.847809,
+                        43.359627
+                    ],
+                    [-5.848141, 43.359356],
+                    [-5.843312, 43.360402],
+                    [-5.843263, 43.359749]
+
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-6.037648,
+                        43.219656
+                    ],
+                    [-6.035936, 43.230559],
+                    [-6.024211, 43.247424],
+                    [-6.005005, 43.257872]
+
+
+                ]
+            }
+        }
+    ]
+}

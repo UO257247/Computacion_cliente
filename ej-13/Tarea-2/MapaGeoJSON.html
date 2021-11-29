@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Mapa JSON</title>
+    <meta name="author" content="Marina Vega Fernández">
+    <link href="MapaGeoJSON.css" rel="stylesheet" />
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Mapa GeoJSON</h1>
+    </header>
+    <main>
+        <section id="control">
+            <p>
+                <label for="files"></label>
+                <input type="file" id="files" onchange="map.init();">
+            </p>
+        </section>
+        <section id="map"></section>
+    </main>
+    <script src="MapaGeoJSON.js"></script>
+</body>
+
+</html>

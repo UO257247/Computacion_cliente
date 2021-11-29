@@ -1,5 +1,5 @@
-class BasicCalculator{
-    constructor(){
+class BasicCalculator {
+    constructor() {
         this.register = 0;
 
         this.string = "";
@@ -7,84 +7,101 @@ class BasicCalculator{
         //             __must_have_one__   ____________zero_to_n____________
         //             ______number______  _____op_____  ______number______
         this.expression = /^\-?[0-9]+(.[0-9]+)?((\+|\-|\*|\/)\-?[0-9]+(.[0-9]+)?)*$/;
+
+        document.addEventListener('keydown', (event) => {
+
+            console.log(event);
+
+            const keyName = event.key;
+            if (keyName === "+") {
+                calc.push("+");
+            }
+            if (keyName === "-") {
+                calc.push("-");
+            }
+            if (keyName === "*") {
+                calc.push("*");
+            }
+            if (keyName === "/") {
+                calc.push("/");
+            }
+            if (keyName === ".") {
+                calc.push(".");
+            }
+            if (keyName === 'Enter') {
+                calc.evaluate();
+            }
+            if (keyName === 'Delete' || keyName === "Backspace") {
+                calc.clear();
+            }
+            if (!isNaN(Number(keyName))) {
+                calc.push(Number(keyName));
+            }
+        });
     }
 
-    update()
-    {
+    update() {
         document.getElementById("viewer").value = this.string;
     }
 
-    clear()
-    {
+    clear() {
         this.string = "";
         this.update();
     }
 
 
-    
-    registerClear()
-    {
+
+    registerClear() {
         this.string = "" + this.register;
         this.register = 0;
         this.update();
     }
 
 
-    registerPlus()
-    {
-        if (this.expression.test(this.string))
-        {
+    registerPlus() {
+        if (this.expression.test(this.string)) {
             this.register += this._eval();
             this.string = "";
-        }
-        else this.string = "SYNTAX ERROR";
+        } else this.string = "SYNTAX ERROR";
 
         this.update();
     }
 
 
-    registerMinus()
-    {
-        if (this.expression.test(this.string))
-        {
+    registerMinus() {
+        if (this.expression.test(this.string)) {
             this.register -= this._eval();
             this.string = "";
-        }
-        else this.string = "SYNTAX ERROR";
+        } else this.string = "SYNTAX ERROR";
 
         this.update();
     }
 
-    push(str)
-    {
+    push(str) {
         this.string += str;
         this.update();
     }
 
 
-    evaluate()
-    {
-        if (this.expression.test(this.string))
-        {
+    evaluate() {
+        if (this.expression.test(this.string)) {
             this.string = this._eval();
-        }
-        else this.string = "SYNTAX ERROR";
+        } else this.string = "SYNTAX ERROR";
 
         this.update();
     }
 
-    _eval()
-    {
+    _eval() {
         //Rounding to 5 decimals
-       
+
         return Math.round(Number(eval(this.string) * 100000)) / 100000;
     }
 }
 
 var calc = new BasicCalculator();
 
-for (let i =0 ; i <= 9; i++){
-    let num= "" + i;
+for (let i = 0; i <= 9; i++) {
+    let num = Number(i);
     document.getElementById(num).onclick = () => calc.push(num);
 }
 
