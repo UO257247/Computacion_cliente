@@ -2,22 +2,21 @@ body {
     margin: 0%;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
-    background-color: #5b8688;
+    background-color: antiquewhite;
 }
 
 h1 {
     text-align: center;
-    color: white;
+    color: black;
     font-size: 4em;
-    text-shadow: 2px 2px 10px #242424;
 }
 
-section map {
-    height: 15rem;
-    width: 100%;
+h3+section {
+    height: 18rem;
+    width: auto;
 }
 
-main div {
+h2+section {
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-column-gap: 1rem;
@@ -34,21 +33,10 @@ main div {
     padding: 0.5rem;
 }
 
-.badge.is-complete {
-    background-color: #61bd4f;
-    color: #fff;
-    border-radius: 3px;
-    padding: 0.3rem 0.5rem;
-    ;
-    font-size: 0.7rem;
-    display: inline-block;
-}
-
-.contentCard {
+section {
     margin: 3%;
     color: black;
     background-color: white;
-    box-shadow: 0px 0px 12px #585858;
     border-radius: 4px;
     padding: 30px;
     align-items: center;
