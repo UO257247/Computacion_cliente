@@ -1,4 +1,5 @@
 var mapaDinamicoGoogle = new Object();
+
 function initMap() {
     var madrid = { lat: 40.416679, lng: -3.703907 };
     var europeMap = new google.maps.Map(document.getElementById('mapa'), { zoom: 4, center: madrid });
@@ -46,23 +47,23 @@ function initMap() {
 
 
     //Añadiendo ventanas a los marcadores
-    madridMark.addListener('click', function () {
+    madridMark.addListener('click', function() {
         madridInfo.open(europeMap, madridMark);
     });
 
-    londonMark.addListener('click', function () {
+    londonMark.addListener('click', function() {
         londonInfo.open(europeMap, londonMark);
     });
 
-    berlinMark.addListener('click', function () {
+    berlinMark.addListener('click', function() {
         berlinInfo.open(europeMap, berlinMark);
     });
 
-    romeMark.addListener('click', function () {
+    romeMark.addListener('click', function() {
         romeInfo.open(europeMap, romeMark);
     });
 
-    parisMark.addListener('click', function () {
+    parisMark.addListener('click', function() {
         parisInfo.open(europeMap, parisMark);
     });
 }
