@@ -13,11 +13,17 @@ main {
     border-radius: 12px;
 }
 
-div {
+label {
+    font-size: small;
+    margin-bottom: 0.0;
+    color: white;
+}
+
+aside {
     display: grid;
     grid-template-columns: repeat(auto-fit, 1fr);
     grid-auto-rows: max-content;
-    grid-template-areas: "a a a a";
+    grid-template-areas: "a a a a a";
 }
 
 input {

@@ -163,6 +163,12 @@ class ScientificCalculator extends BasicCalculator {
         this.update();
     }
 
+    doPi() {
+
+    }
+
+    changeSign()
+
 }
 var calc = new ScientificCalculator();
 
@@ -171,7 +177,7 @@ for (let i = 0; i < 10; i++) {
     document.getElementById(numb).onclick = () => calc.push(numb);
 }
 
-document.getElementById("clear").onclick = () => calc.clear();
+//document.getElementById("clear").onclick = () => calc.clear();
 
 document.getElementById("dot").onclick = () => calc.push(".");
 
