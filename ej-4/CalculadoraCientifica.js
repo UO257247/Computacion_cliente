@@ -1,7 +1,6 @@
-class ScientificCalculator {
+class BasicCalculator {
 
-    constructor()
-    {
+    constructor() {
         this.register = 0;
 
         this.string = "";
@@ -11,169 +10,129 @@ class ScientificCalculator {
         this.regex = /^\-?[0-9]+(.[0-9]+)?((\+|\-|\*|\/)\-?[0-9]+(.[0-9]+)?)*$/;
     }
 
-    update()
-    {
+    update() {
         document.getElementById("viewer").value = this.string;
     }
 
-    clear()
-    {
+    clear() {
         this.string = "";
         this.update();
     }
 
-    registerClear()
-    {
+    registerClear() {
         this.string = "" + this.register;
         this.register = 0;
         this.update();
     }
 
-    registerPlus()
-    {
-        if (this.regex.test(this.string))
-        {
+    registerPlus() {
+        if (this.regex.test(this.string)) {
             this.register += this._eval();
             this.string = "";
-        }
-        else this.string = "SYNTAX ERROR";
+        } else this.string = "SYNTAX ERROR";
 
         this.update();
     }
 
-    registerMinus()
-    {
-        if (this.regex.test(this.string))
-        {
+    registerMinus() {
+        if (this.regex.test(this.string)) {
             this.register -= this._eval();
             this.string = "";
-        }
-        else this.string = "SYNTAX ERROR";
+        } else this.string = "SYNTAX ERROR";
 
         this.update();
     }
 
-    push(str)
-    {
+    push(str) {
         this.string += str;
         this.update();
     }
 
-    evaluate()
-    {
-        if (this.regex.test(this.string))
-        {
+    evaluate() {
+        if (this.regex.test(this.string)) {
             this.string = this._eval();
-        }
-        else this.string = "SYNTAX ERROR";
+        } else this.string = "SYNTAX ERROR";
 
         this.update();
     }
 
 
-    _eval()
-    {
+    _eval() {
         // Round to have max five decimals
         return Math.round(eval(this.string) * 100000) / 100000;
     }
-    
 
 
 
-    doSin()
-    {
-        if (this.regex.test(this.string))
-        {
+
+    doSin() {
+        if (this.regex.test(this.string)) {
             this.string = Math.sin(this._eval());
-        }
-        else this.string = "SYNTAX ERROR";
+        } else this.string = "SYNTAX ERROR";
         this.update();
     }
 
-    doCos()
-    {
-        if (this.regex.test(this.string))
-        {
+    doCos() {
+        if (this.regex.test(this.string)) {
             this.string = Math.cos(this._eval());
-        }
-        else this.string = "SYNTAX ERROR";
+        } else this.string = "SYNTAX ERROR";
         this.update();
     }
 
-    doTan()
-    {
-        if (this.regex.test(this.string))
-        {
+    doTan() {
+        if (this.regex.test(this.string)) {
             this.string = Math.tan(this._eval());
-        }
-        else this.string = "SYNTAX ERROR";
+        } else this.string = "SYNTAX ERROR";
         this.update();
     }
 
-    doFactorial()
-    {
-        if (this.regex.test(this.string))
-        {
+    doFactorial() {
+        if (this.regex.test(this.string)) {
             this.string = this._factorial(this._eval());
-        }
-        else this.string = "SYNTAX ERROR";
+        } else this.string = "SYNTAX ERROR";
         this.update();
     }
 
-    _factorial(n) 
-    {
+    _factorial(n) {
         if (n == 0)
             return 1;
 
         return n * this._factorial(n - 1);
     }
 
-    doExp()
-    {
-        if (this.regex.test(this.string))
-        {
+    doExp() {
+        if (this.regex.test(this.string)) {
             this.string = Math.exp(this._eval());
-        }
-        else this.string = "SYNTAX ERROR";
+        } else this.string = "SYNTAX ERROR";
         this.update();
     }
 
-    doLog()
-    {
-        if (this.regex.test(this.string))
-        {
+    doLog() {
+        if (this.regex.test(this.string)) {
             this.string = Math.log2(this._eval());
-        }
-        else this.string = "SYNTAX ERROR";
+        } else this.string = "SYNTAX ERROR";
         this.update();
     }
 
-    doSqrt()
-    {
-        if (this.regex.test(this.string))
-        {
+    doSqrt() {
+        if (this.regex.test(this.string)) {
             this.string = Math.sqrt(this._eval());
-        }
-        else this.string = "SYNTAX ERROR";
+        } else this.string = "SYNTAX ERROR";
         this.update();
     }
 
-    doPow()
-    {
-        if (this.regex.test(this.string))
-        {
+    doPow() {
+        if (this.regex.test(this.string)) {
             let n = this._eval();
             this.string = n * n;
-        }
-        else this.string = "SYNTAX ERROR";
+        } else this.string = "SYNTAX ERROR";
         this.update();
     }
 }
 
-var calc = new ScientificCalculator();
+var calc = new BasicCalculator();
 
-for (let i = 0; i < 10; i ++)
-{
+for (let i = 0; i < 10; i++) {
     let numb = "" + i;
     document.getElementById(numb).onclick = () => calc.push(numb);
 }
