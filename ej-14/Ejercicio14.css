@@ -11,8 +11,17 @@ h1 {
     font-size: 4em;
 }
 
+section {
+    margin: 3%;
+    color: black;
+    background-color: white;
+    border-radius: 4px;
+    padding: 30px;
+    align-items: center;
+}
+
 h3+section {
-    height: 18rem;
+    height: 20rem;
     width: auto;
 }
 
