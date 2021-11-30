@@ -11,7 +11,6 @@
 
 <body>
     <h1>Gestor de Tareas</h1>
-
     <section class="contentCard">
         <h2>Carga archivos para añadir post-its</h2>
         <p>Puedes arrastrar los post-its para ordenarlos a tu gusto.</p>
@@ -19,7 +18,7 @@
         <input type="file" id="archivoTexto" onchange="fm.leerArchivoTexto(this.files);">
     </section>
 
-    <div class="contentCard">
+    <main class="contentCard">
         <div class="container">
 
 
@@ -27,7 +26,6 @@
                 <div id='list' class="list" draggable="true" ondragstart="g.dragStart(event)">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid dolor officiis nemo error asperiores illo placeat recusandae architecto numquam. Rerum?
                 </div>
-
 
             </div>
             <div class="droppable" ondragover="g.allowDrop(event)" ondrop="g.drop(event)"></div>
@@ -38,16 +36,16 @@
             <div class="droppable" ondragover="g.allowDrop(event)" ondrop="g.drop(event)"></div>
             <div id="last" class="droppable" ondragover="g.allowDrop(event)" ondrop="g.drop(event)"></div>
         </div>
-    </div>
+    </main>
 
-    <div class="contentCard">
+    <section class="contentCard">
         <h2>Más información</h2>
         <h3>Puedes encontrarnos en nuestra oficina en Oviedo:</h3>
         <div id="mapa"></div>
 
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU&callback=mapaDinamicoGoogle.initMap">
         </script>
-    </div>
+    </section>
 
 </body>
 
