@@ -23,7 +23,7 @@ main {
     border-radius: 12px;
 }
 
-div {
+aside {
     display: grid;
     grid-template-columns: repeat(auto-fit, 1fr);
     grid-auto-rows: max-content;

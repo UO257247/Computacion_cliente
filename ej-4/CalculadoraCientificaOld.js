@@ -1,4 +1,5 @@
 class BasicCalculator {
+
     constructor() {
         this.register = 0;
 
@@ -6,38 +7,7 @@ class BasicCalculator {
 
         //             __must_have_one__   ____________zero_to_n____________
         //             ______number______  _____op_____  ______number______
-        this.expression = /^\-?[0-9]+(.[0-9]+)?((\+|\-|\*|\/)\-?[0-9]+(.[0-9]+)?)*$/;
-
-        document.addEventListener('keydown', (event) => {
-
-            console.log(event);
-
-            const keyName = event.key;
-            if (keyName === "+") {
-                calc.push("+");
-            }
-            if (keyName === "-") {
-                calc.push("-");
-            }
-            if (keyName === "*") {
-                calc.push("*");
-            }
-            if (keyName === "/") {
-                calc.push("/");
-            }
-            if (keyName === ".") {
-                calc.push(".");
-            }
-            if (keyName === 'Enter') {
-                calc.evaluate();
-            }
-            if (keyName === 'Delete' || keyName === "Backspace") {
-                calc.clear();
-            }
-            if (!isNaN(Number(keyName))) {
-                calc.push(Number(keyName));
-            }
-        });
+        this.regex = /^\-?[0-9]+(.[0-9]+)?((\+|\-|\*|\/)\-?[0-9]+(.[0-9]+)?)*$/;
     }
 
     update() {
@@ -49,17 +19,14 @@ class BasicCalculator {
         this.update();
     }
 
-
-
     registerClear() {
         this.string = "" + this.register;
         this.register = 0;
         this.update();
     }
 
-
     registerPlus() {
-        if (this.expression.test(this.string)) {
+        if (this.regex.test(this.string)) {
             this.register += this._eval();
             this.string = "";
         } else this.string = "SYNTAX ERROR";
@@ -67,9 +34,8 @@ class BasicCalculator {
         this.update();
     }
 
-
     registerMinus() {
-        if (this.expression.test(this.string)) {
+        if (this.regex.test(this.string)) {
             this.register -= this._eval();
             this.string = "";
         } else this.string = "SYNTAX ERROR";
@@ -82,23 +48,23 @@ class BasicCalculator {
         this.update();
     }
 
-
     evaluate() {
-        if (this.expression.test(this.string)) {
+        if (this.regex.test(this.string)) {
             this.string = this._eval();
         } else this.string = "SYNTAX ERROR";
 
         this.update();
     }
 
+
     _eval() {
-        //Rounding to 5 decimals
-
-        return Math.round(Number(eval(this.string) * 100000)) / 100000;
+        // Round to have max five decimals
+        return Math.round(eval(this.string) * 100000) / 100000;
     }
-}
 
-class ScientificCalculator extends BasicCalculator {
+
+
+
     doSin() {
         if (this.regex.test(this.string)) {
             this.string = Math.sin(this._eval());
@@ -162,9 +128,9 @@ class ScientificCalculator extends BasicCalculator {
         } else this.string = "SYNTAX ERROR";
         this.update();
     }
-
 }
-var calc = new ScientificCalculator();
+
+var calc = new BasicCalculator();
 
 for (let i = 0; i < 10; i++) {
     let numb = "" + i;
