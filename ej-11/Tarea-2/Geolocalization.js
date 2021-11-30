@@ -52,3 +52,4 @@ class Geolocalización {
     }
 }
 var miPosicion = new Geolocalización();
+
