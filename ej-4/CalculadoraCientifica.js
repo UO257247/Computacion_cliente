@@ -20,15 +20,21 @@ class BasicCalculator {
             ^ .* ? \([ ^ \d] * (\d + )[ ^ \d] * \).*$
         */
         // -?(\())
+
+
         let numb = "[0-9]+(.[0-9]+)?";
-        numb = "((" + numb + ")|(" + "\\(" + numb + "\\)" + "))";
-        this.regex = new RegExp("^" +
-            "\\-?" + numb +
+        let expr = "\\-?" + numb +
             "(" +
             "(\\+|\\-|\\*|\\/)" +
             "\\-?" + numb +
-            ")*" +
-            "$");
+            ")*";
+        let parenthesys = "((" + expr + ")|(" + "\\(" + expr + "\\)" + "))";
+        expr = "\\-?" + parenthesys +
+            "(" +
+            "(\\+|\\-|\\*|\\/)" +
+            "\\-?" + parenthesys +
+            ")*";
+        this.regex = new RegExp("^" + expr + "$");
         //this.regex = /^\-?[0-9]+(.[0-9]+)?((\+|\-|\*|\/)\-?[0-9]+(.[0-9]+)?)*$/;
 
 
