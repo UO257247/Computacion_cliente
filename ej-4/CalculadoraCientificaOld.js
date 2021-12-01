@@ -1,3 +1,4 @@
+/*
 class BasicCalculator {
 
     constructor() {
@@ -15,13 +16,32 @@ class BasicCalculator {
     }
 
     clear() {
+        console.log("PATAT 2A");
         this.string = "";
         this.update();
     }
 
+    clearE() {
+        console.log("PATATA");
+        const limit = this.string.length - 1;
+        for (let i = limit; i >= 0; i--) {
+            let value = this.string[i];
+            if (/^([^0-9]*)$/.test(value)) { // Break when we reach the first non-number
+                display.value = display.value.substring(0, i);
+                break;
+            }
+        }
+    }
+
+
+
     registerClear() {
-        this.string = "" + this.register;
         this.register = 0;
+        this.update();
+    }
+
+    registerRead() {
+        this.string = "" + this.register;
         this.update();
     }
 
@@ -137,7 +157,8 @@ for (let i = 0; i < 10; i++) {
     document.getElementById(numb).onclick = () => calc.push(numb);
 }
 
-document.getElementById("clear").onclick = () => calc.clear();
+document.getElementById("C").onclick = () => calc.clear();
+document.getElementById("CE").onclick = () => calc.clearE();
 
 document.getElementById("dot").onclick = () => calc.push(".");
 
@@ -163,3 +184,4 @@ document.getElementById("log").onclick = () => calc.doLog();
 document.getElementById("sqrt").onclick = () => calc.doSqrt();
 document.getElementById("mod").onclick = () => calc.push("%");
 document.getElementById("pow").onclick = () => calc.doPow();
+*/

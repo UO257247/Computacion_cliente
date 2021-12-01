@@ -12,6 +12,12 @@ class RPNCalculator {
         this.memory = "";
     }
 
+    clearE() {
+        if (this.stack.length > 0)
+            this.stack.pop();
+    }
+
+
     update() {
         this.display = "";
         for (var i = 0; i < this.stack.length; i++) {
@@ -203,6 +209,7 @@ class RPNCalculator {
 var calc = new RPNCalculator();
 
 document.getElementById("clear").onclick = calc.clear.bind(calc);
+document.getElementById("clearE").onclick = calc.clearE.bind(calc);
 
 for (let i = 0; i < 10; i++) {
     let numb = Number(i);
@@ -234,4 +241,4 @@ document.getElementById("mod").onclick = () => calc.doMod();
 document.getElementById("pow").onclick = () => calc.doPow();
 document.getElementById("enter").onclick = () => calc.enter();
 
-document.getElementById("dot").onclick = () => calc.push(".");
+document.getElementById("dot").onclick = () => calc.writeOnDisplay(".");
