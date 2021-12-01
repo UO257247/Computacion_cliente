@@ -6,7 +6,9 @@
     <title>Mapa JSON</title>
     <meta name="author" content="Marina Vega Fernández">
     <link href="MapaGeoJSON.css" rel="stylesheet" />
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD18zrsxZxy5NLK2CYEdZRAAWqujU_EIHA"></script>
 </head>
 
 <body>
@@ -15,12 +17,14 @@
     </header>
     <main>
         <section id="control">
-            <p>
-                <label for="files"></label>
-                <input type="file" id="files" onchange="map.init();">
-            </p>
+            <h2>Cargar Archivo</h2>
+            <label for="files"></label>
+            <input type="file" id="fileInput" onchange="geoJson.loadFile();">
         </section>
-        <section id="map"></section>
+
+        <section id="map">
+            <h2>Mapa</h2>
+        </section>
     </main>
     <script src="MapaGeoJSON.js"></script>
 </body>
