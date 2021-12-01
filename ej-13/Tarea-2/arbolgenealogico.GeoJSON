@@ -2,106 +2,154 @@
     "type": "FeatureCollection",
     "features": [{
             "type": "Feature",
-            "properties": {},
             "geometry": {
-                "type": "LineString",
-                "coordinates": [
-                    [-5.867707140736883,
-                        43.3671353
-                    ],
-                    [-5.865946,
-                        43.37908
-                    ],
-                    [-5.868376,
-                        43.380249
-                    ],
-                    [-5.866667,
-                        43.383333
-                    ]
-
-
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "output3.log",
-                "stroke": "#ff0000",
-                "stroke-opacity": 1,
-                "stroke-width": 10
+                "type": "Point",
+                "coordinates": [-5.936144, 43.551990]
             },
-            "geometry": {
-                "type": "LineString",
-                "coordinates": [
-                    [-5.9205,
-                        43.333
-                    ],
-                    [-5.9288647, 43.3318045],
-                    [-5.928551, 43.323185],
-                    [-5.918925, 43.323311]
-
-                ]
-            }
-        },
-        {
-            "type": "Feature",
             "properties": {
-                "name": "output4.log",
-                "stroke": "#b12cee",
-                "stroke-opacity": 1,
-                "stroke-width": 10
-            },
-            "geometry": {
-                "type": "LineString",
-                "coordinates": [
-                    [-5.8511504,
-                        43.3552622
-                    ],
-                    [-5.8511504, 43.3552622],
-                    [-5.860874, 43.358318],
-                    [-5.843455, 43.362524]
-
-                ]
+                "name": "Marina"
             }
         },
         {
             "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-5.867850, 43.356911]
+            },
             "properties": {
-                "name": "output4.log",
-                "stroke": "#b12cee",
-                "stroke-opacity": 1,
-                "stroke-width": 10
-            },
-            "geometry": {
-                "type": "LineString",
-                "coordinates": [
-                    [-5.847809,
-                        43.359627
-                    ],
-                    [-5.848141, 43.359356],
-                    [-5.843312, 43.360402],
-                    [-5.843263, 43.359749]
-
-                ]
+                "name": "Manuel Vidal"
             }
         },
         {
             "type": "Feature",
-            "properties": {},
             "geometry": {
-                "type": "LineString",
-                "coordinates": [
-                    [-6.037648,
-                        43.219656
-                    ],
-                    [-6.035936, 43.230559],
-                    [-6.024211, 43.247424],
-                    [-6.005005, 43.257872]
-
-
-                ]
+                "type": "Point",
+                "coordinates": [-6.105034, 43.543961]
+            },
+            "properties": {
+                "name": "Aquilino"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-6.105034, 43.543961]
+            },
+            "properties": {
+                "name": "Manuel"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-6.11854972959261843, 453652060364828]
+            },
+            "properties": {
+                "name": "Casilda"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-4.581683, 40.894654]
+            },
+            "properties": {
+                "name": "Marial del Pilar"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-4.581683, 40.894654]
+            },
+            "properties": {
+                "name": "Vidal"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-4.581683, 40.894654]
+            },
+            "properties": {
+                "name": "Mariana"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-5.867850, 43.356911]
+            },
+            "properties": {
+                "name": "Maria Rosa"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-6.104761, 43.541986]
+            },
+            "properties": {
+                "name": "Ramón"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-5.936144, 43.551990]
+            },
+            "properties": {
+                "name": "Francisco"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-6.10337415985674, 43.54385713216607]
+            },
+            "properties": {
+                "name": "Maria Dolores"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-6.180366, 43.559865]
+            },
+            "properties": {
+                "name": "Maria Zulima"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-6.147012389060073, 43.56159971471379]
+            },
+            "properties": {
+                "name": "José"
+            }
+        }, {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-6.180366, 43.559865]
+            },
+            "properties": {
+                "name": "Mercedes"
             }
         }
+
+
     ]
 }
