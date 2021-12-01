@@ -24,39 +24,69 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    [-6.543967, 43.105428],
-                    [-6.105034, 43.543961]
-                ]
+                "coordinates": [-6.543967, 43.105428]
+
+
             },
             "properties": {
-                "name": "Aquilino"
+                "name": "Aquilino nacimiento"
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    [-6.105428, 43.543967],
-                    [-6.10503443, 43.543961]
-                ]
+                "coordinates":
+
+                    [-6.105034, 43.543961]
+
             },
             "properties": {
-                "name": "Manuel"
+                "name": "Aquilino defunción"
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    [-6.11854972959261843, 453652060364828],
-                    [-6.105034, 43.543961]
-                ]
+                "coordinates": [-6.105428, 43.543967]
+
             },
             "properties": {
-                "name": "Casilda"
+                "name": "Manuel nacimiento"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-6.10503443, 43.543961]
+
+            },
+            "properties": {
+                "name": "Manuel defunción"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-6.11854972959261843, 453652060364828]
+
+            },
+            "properties": {
+                "name": "Casilda nacimiento"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-6.105034, 43.543961]
+
+            },
+            "properties": {
+                "name": "Casilda defunción"
             }
         },
         {
@@ -73,26 +103,43 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    [-4.581683, 40.894654],
-                    [-4.581683, 40.894654]
-                ]
+                "coordinates": [-4.581683, 40.894654]
+
             },
             "properties": {
-                "name": "Vidal"
+                "name": "Vidal nacimiento"
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    [-4.581683, 40.894654],
-                    [-4.581783, 40.89400]
-                ]
+                "coordinates": [-4.581683, 40.894654]
+
             },
             "properties": {
-                "name": "Mariana"
+                "name": "Vidal defunción"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-4.581683, 40.894654]
+            },
+            "properties": {
+                "name": "Mariana nacimiento"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-4.581783, 40.89400]
+
+            },
+            "properties": {
+                "name": "Mariana defuncion"
             }
         },
         {
@@ -109,39 +156,64 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    [-6.104761, 43.541986],
-                    [-5.936144, 43.551990]
-                ]
+                "coordinates": [-6.104761, 43.541986]
             },
             "properties": {
-                "name": "Ramón"
+                "name": "Ramón nacimiento"
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    [-6.533031900121618, 43.54421065739363],
-                    [-5.936144, 43.551990]
-                ]
+                "coordinates": [-5.936144, 43.551990]
+
             },
             "properties": {
-                "name": "Francisco"
+                "name": "Ramón defuncion"
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    [-6.10337415985674, 43.54385713216607],
-                    [-6.10337415985674, 43.54385713216607]
-                ]
+                "coordinates": [-6.533031900121618, 43.54421065739363]
+
             },
             "properties": {
-                "name": "Maria Dolores"
+                "name": "Francisco nacimiento"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-5.936144, 43.551990]
+
+            },
+            "properties": {
+                "name": "Francisco defuncion"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-6.10337415985674, 43.54385713216607]
+            },
+            "properties": {
+                "name": "Maria Dolores nacimiento"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-6.10337415985674, 43.54385713216607]
+
+            },
+            "properties": {
+                "name": "Maria Dolores defuncion"
             }
         },
         {
@@ -158,26 +230,42 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    [-6.13648167198461, 43.3297367845439005],
-                    [-6.147012389060073, 43.56159971471379]
-                ]
+                "coordinates": [-6.13648167198461, 43.3297367845439005]
             },
             "properties": {
-                "name": "José"
+                "name": "José nacimiento"
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    [-6.180366, 43.559865],
-                    [-6.103374159856743, 43.54385713216607]
-                ]
+                "coordinates": [-6.147012389060073, 43.56159971471379]
+
             },
             "properties": {
-                "name": "Mercedes"
+                "name": "José defuncion"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-6.180366, 43.559865]
+            },
+            "properties": {
+                "name": "Mercedes nacimiento"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-6.103374159856743, 43.54385713216607]
+
+            },
+            "properties": {
+                "name": "Mercedes defuncion"
             }
         }
 
