@@ -10,7 +10,6 @@ class BasicCalculator {
 
         document.addEventListener('keydown', (event) => {
 
-            console.log(event);
 
             const keyName = event.key;
             if (keyName === "+") {

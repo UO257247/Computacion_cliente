@@ -3,6 +3,35 @@ class RPNCalculator {
         this.display = "";
         this.memory = "";
         this.stack = [];
+
+        document.addEventListener('keydown', (event) => {
+
+            const keyName = event.key;
+            if (keyName === "+") {
+                calc.doAddition();
+            }
+            if (keyName === "-") {
+                calc.doSubtraction();
+            }
+            if (keyName === "*") {
+                calc.doMultiplication();
+            }
+            if (keyName === "/") {
+                calc.calc.doDivision();
+            }
+            if (keyName === ".") {
+                calc.writeOnDisplay(".");
+            }
+            if (keyName === 'Enter') {
+                calc.enter();
+            }
+            if (keyName === 'Delete' || keyName === "Backspace") {
+                calc.clear();
+            }
+            if (!isNaN(Number(keyName))) {
+                calc.writeOnDisplay(Number(keyName));
+            }
+        });
     }
 
     clear() {
