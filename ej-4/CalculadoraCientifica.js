@@ -9,9 +9,27 @@ class BasicCalculator {
                 this.expression = /^\-?[0-9]+(.[0-9]+)?((\+|\-|\*|\/)\-?[0-9]+(.[0-9]+)?)*$/;
         */
 
-        //             __must_have_one__   ____________zero_to_n____________
-        //             ______number______  _____op_____  ______number______
-        this.expression = /^\-?[0-9]+(.[0-9]+)?((\+|\-|\*|\/)\-?[0-9]+(.[0-9]+)?)*$/;
+
+        /*
+            ^ # Match the start of the line
+            .* ? # Non - greedy match anything\(# Upto the first opening bracket(escaped)[ ^ \d] * # Match anything not a digit(zero or more)
+                (\d + ) # Match a digit string(one or more)[ ^ \d] * # Match anything not a digit(zero or more)\) # Match closing bracket
+            .*# Match the rest of the line
+            $ # Match the end of the line
+
+            ^ .* ? \([ ^ \d] * (\d + )[ ^ \d] * \).*$
+        */
+        // -?(\())
+        let numb = "[0-9]+(.[0-9]+)?";
+        numb = "((" + numb + ")|(" + "\\(" + numb + "\\)" + "))";
+        this.regex = new RegExp("^" +
+            "\\-?" + numb +
+            "(" +
+            "(\\+|\\-|\\*|\\/)" +
+            "\\-?" + numb +
+            ")*" +
+            "$");
+        //this.regex = /^\-?[0-9]+(.[0-9]+)?((\+|\-|\*|\/)\-?[0-9]+(.[0-9]+)?)*$/;
 
 
         document.addEventListener('keydown', (event) => {
@@ -88,7 +106,7 @@ class BasicCalculator {
 
 
     registerPlus() {
-        if (this.expression.test(this.string)) {
+        if (this.regex.test(this.string)) {
             this.register += this._eval();
             this.string = "";
         } else this.string = "SYNTAX ERROR";
@@ -98,7 +116,7 @@ class BasicCalculator {
 
 
     registerMinus() {
-        if (this.expression.test(this.string)) {
+        if (this.regex.test(this.string)) {
             this.register -= this._eval();
             this.string = "";
         } else this.string = "SYNTAX ERROR";
@@ -113,7 +131,7 @@ class BasicCalculator {
 
 
     evaluate() {
-        if (this.expression.test(this.string)) {
+        if (this.regex.test(this.string)) {
             this.string = this._eval();
         } else this.string = "SYNTAX ERROR";
 
