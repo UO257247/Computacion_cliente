@@ -19,8 +19,7 @@ p {
     font-size: medium;
 }
 
-section {
-    background-color: rgb(101, 156, 94);
+section~section {
     border-style: solid;
     margin-bottom: 20px;
     height: 500px;
